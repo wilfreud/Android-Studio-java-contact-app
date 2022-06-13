@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryColor"
+    tools:context=".AjoutModifContact">
+
+<!--    Image circulaire de profil-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_30sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_gravity="center"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/white"
+            android:layout_marginBottom="@dimen/_20sdp"
+            />
+
+        <!--    Chmaps de saisie [ nom ] -->
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/nom"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_for_input_field"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_text_fields_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"
+            />
+
+        <!--    Chmaps de saisie [ numero ] -->
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/telephone"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_for_input_field"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"
+            />
+
+        <!--    Chmaps de saisie [ email ] -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_for_input_field"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"
+            />
+
+        <!--    Chmaps de saisie [ notes ] -->
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textLongMessage"
+            android:hint="@string/note"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_for_input_field"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawableStart="@drawable/ic_baseline_note_24"
+            android:drawablePadding="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+
+
+<!--    Bouton d'ajout-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="@string/contact_app"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/ic_baseline_save_24"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+
+</RelativeLayout>

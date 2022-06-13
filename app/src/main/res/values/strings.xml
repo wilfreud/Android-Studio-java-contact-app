@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">X-Contacts</string>
+    <string name="contact_app">Contact App</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="telephone">Telephone</string>
+    <string name="email">email</string>
+    <string name="note">Note</string>
+    <string name="nom_du_contact">Nom du contact</string>
+</resources>
